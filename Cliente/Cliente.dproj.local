@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/05/04 18:35:55.000.642,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/05/12 21:38:57.000.086,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/05/12 21:39:50.000.901,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Sistemas\VendaLanches\Cliente\uFrmCliente.pas</Transaction>
+    <Transaction>2021/05/12 21:39:50.000.901,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Sistemas\VendaLanches\Cliente\uFrmCliente.dfm</Transaction>
+    <Transaction>2021/05/12 21:39:55.000.261,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Sistemas\VendaLanches\Cliente\Cliente.dproj</Transaction>
+    <Transaction>2021/05/12 21:40:07.000.911,=C:\Sistemas\VendaLanches\Cliente\Unit1.pas</Transaction>
+    <Transaction>2021/05/12 21:40:17.000.294,C:\Sistemas\VendaLanches\Cliente\Unit1.dfm=C:\Sistemas\VendaLanches\Cliente\uDM.dfm</Transaction>
+    <Transaction>2021/05/12 21:40:17.000.294,C:\Sistemas\VendaLanches\Cliente\Unit1.pas=C:\Sistemas\VendaLanches\Cliente\uDM.pas</Transaction>
+    <Transaction>2021/05/13 09:36:44.000.689,=C:\sistemas\VendaLanches\Cliente\Unit1.pas</Transaction>
+    <Transaction>2021/05/13 09:36:49.000.525,=C:\sistemas\VendaLanches\Cliente\Unit2.pas</Transaction>
+    <Transaction>2021/05/13 09:36:52.000.902,=C:\sistemas\VendaLanches\Cliente\Unit3.pas</Transaction>
+    <Transaction>2021/05/13 09:36:55.000.664,=C:\sistemas\VendaLanches\Cliente\Unit4.pas</Transaction>
+    <Transaction>2021/05/13 09:37:30.000.265,C:\sistemas\VendaLanches\Cliente\Unit1.pas=C:\sistemas\VendaLanches\Cliente\uFrmCadastroLanches.pas</Transaction>
+    <Transaction>2021/05/13 09:37:30.000.265,C:\sistemas\VendaLanches\Cliente\Unit1.dfm=C:\sistemas\VendaLanches\Cliente\uFrmCadastroLanches.dfm</Transaction>
+    <Transaction>2021/05/13 09:37:36.000.807,C:\sistemas\VendaLanches\Cliente\Unit4.dfm=C:\sistemas\VendaLanches\Cliente\uFrmCadastroPedidos.dfm</Transaction>
+    <Transaction>2021/05/13 09:37:36.000.807,C:\sistemas\VendaLanches\Cliente\Unit4.pas=C:\sistemas\VendaLanches\Cliente\uFrmCadastroPedidos.pas</Transaction>
+    <Transaction>2021/05/13 09:37:43.000.805,C:\sistemas\VendaLanches\Cliente\Unit3.pas=C:\sistemas\VendaLanches\Cliente\ufrmCadastroIngredientes.pas</Transaction>
+    <Transaction>2021/05/13 09:37:43.000.805,C:\sistemas\VendaLanches\Cliente\Unit3.dfm=C:\sistemas\VendaLanches\Cliente\ufrmCadastroIngredientes.dfm</Transaction>
+    <Transaction>2021/05/13 09:37:55.000.509,C:\sistemas\VendaLanches\Cliente\Unit2.pas=C:\sistemas\VendaLanches\Cliente\uFrmConsultaCardapio.pas</Transaction>
+    <Transaction>2021/05/13 09:37:55.000.509,C:\sistemas\VendaLanches\Cliente\Unit2.dfm=C:\sistemas\VendaLanches\Cliente\uFrmConsultaCardapio.dfm</Transaction>
+    <Transaction>2021/05/13 11:29:53.000.291,=C:\sistemas\VendaLanches\Cliente\Unit1.pas</Transaction>
+    <Transaction>2021/05/13 11:30:53.000.773,C:\sistemas\VendaLanches\Cliente\Unit1.pas=C:\sistemas\VendaLanches\Cliente\uCC.pas</Transaction>
+    <Transaction>2021/05/13 13:03:33.000.495,=C:\sistemas\VendaLanches\Cliente\ClientModuleUnit1.pas</Transaction>
+    <Transaction>2021/05/13 13:03:33.000.149,=C:\sistemas\VendaLanches\Cliente\ClientClassesUnit1.pas</Transaction>
+    <Transaction>2021/05/13 13:05:07.000.673,C:\sistemas\VendaLanches\Cliente\uCC.pas=</Transaction>
+    <Transaction>2021/05/13 13:06:06.000.174,C:\sistemas\VendaLanches\Cliente\ClientClassesUnit1.pas=C:\sistemas\VendaLanches\Cliente\uCC.pas</Transaction>
+    <Transaction>2021/05/13 13:06:09.000.500,C:\sistemas\VendaLanches\Cliente\ClientModuleUnit1.dfm=C:\sistemas\VendaLanches\Cliente\uCM.dfm</Transaction>
+    <Transaction>2021/05/13 13:06:09.000.500,C:\sistemas\VendaLanches\Cliente\ClientModuleUnit1.pas=C:\sistemas\VendaLanches\Cliente\uCM.pas</Transaction>
+    <Transaction>2021/05/13 13:36:21.000.593,C:\sistemas\VendaLanches\Cliente\uDM.pas=</Transaction>
+    <Transaction>2021/05/13 20:35:08.000.537,C:\Sistemas\VendaLanches\Cliente\uFrmConsultaCardapio.pas=</Transaction>
+    <Transaction>2021/05/13 20:39:59.000.575,=C:\Sistemas\VendaLanches\Cliente\Unit1.pas</Transaction>
+    <Transaction>2021/05/13 20:40:20.000.276,C:\Sistemas\VendaLanches\Cliente\Unit1.dfm=C:\Sistemas\VendaLanches\Cliente\uFrmConsultaCardapio.dfm</Transaction>
+    <Transaction>2021/05/13 20:40:20.000.276,C:\Sistemas\VendaLanches\Cliente\Unit1.pas=C:\Sistemas\VendaLanches\Cliente\uFrmConsultaCardapio.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

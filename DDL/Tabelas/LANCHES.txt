@@ -1,0 +1,38 @@
+SET SQL DIALECT 3;
+/******************************************************************************/
+/****                                Tables                                ****/
+/******************************************************************************/
+CREATE TABLE LANCHES (
+    LAN_CODIGO  INTEGER NOT NULL,
+    LAN_NOME    VARCHAR(50),
+    LAN_VALOR   NUMERIC(10,2)
+);
+/******************************************************************************/
+/****                             Primary keys                             ****/
+/******************************************************************************/
+ALTER TABLE LANCHES ADD CONSTRAINT PK_LANCHES PRIMARY KEY (LAN_CODIGO);
+/******************************************************************************/
+/****                         Fields descriptions                          ****/
+/******************************************************************************/
+COMMENT ON COLUMN LANCHES.LAN_CODIGO IS 
+'CODIGO DO LANCHE';
+
+COMMENT ON COLUMN LANCHES.LAN_NOME IS 
+'NOME DO LANCHE';
+
+COMMENT ON COLUMN LANCHES.LAN_VALOR IS 
+'VALOR DO LANCHE';
+/******************************************************************************/
+/****                              Privileges                              ****/
+/******************************************************************************/
+/* Privileges of users */
+GRANT SELECT ON MON$ATTACHMENTS TO PUBLIC;
+GRANT SELECT ON MON$CALL_STACK TO PUBLIC;
+GRANT SELECT ON MON$CONTEXT_VARIABLES TO PUBLIC;
+GRANT SELECT ON MON$DATABASE TO PUBLIC;
+GRANT SELECT ON MON$IO_STATS TO PUBLIC;
+GRANT SELECT ON MON$MEMORY_USAGE TO PUBLIC;
+GRANT SELECT ON MON$RECORD_STATS TO PUBLIC;
+GRANT SELECT ON MON$STATEMENTS TO PUBLIC;
+GRANT SELECT ON MON$TABLE_STATS TO PUBLIC;
+GRANT SELECT ON MON$TRANSACTIONS TO PUBLIC;

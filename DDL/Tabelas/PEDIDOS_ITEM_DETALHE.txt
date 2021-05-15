@@ -1,0 +1,64 @@
+SET SQL DIALECT 3;
+/******************************************************************************/
+/****                                Tables                                ****/
+/******************************************************************************/
+CREATE TABLE PEDIDOS_ITEM_DETALHE (
+    PED_CODIGO  INTEGER NOT NULL,
+    ITE_NUMERO  SMALLINT NOT NULL,
+    LAN_CODIGO  INTEGER NOT NULL,
+    LAN_ITEM    SMALLINT NOT NULL,
+    ING_CODIGO  INTEGER,
+    ITE_QTDE    SMALLINT,
+    ITE_VRUNIT  NUMERIC(10,2),
+    ITE_TOTAL   NUMERIC(10,2)
+);
+/******************************************************************************/
+/****                             Primary keys                             ****/
+/******************************************************************************/
+ALTER TABLE PEDIDOS_ITEM_DETALHE ADD CONSTRAINT PK_PEDIDOS_ITEM_DETALHE PRIMARY KEY (PED_CODIGO, ITE_NUMERO, LAN_CODIGO, LAN_ITEM);
+/******************************************************************************/
+/****                             Foreign keys                             ****/
+/******************************************************************************/
+ALTER TABLE PEDIDOS_ITEM_DETALHE ADD CONSTRAINT FK_PEDIDOS_ITEM_DETALHE_1 FOREIGN KEY (PED_CODIGO, ITE_NUMERO) REFERENCES PEDIDOS_ITEM (PED_CODIGO, ITE_NUMERO) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE PEDIDOS_ITEM_DETALHE ADD CONSTRAINT FK_PEDIDOS_ITEM_DETALHE_2 FOREIGN KEY (LAN_CODIGO) REFERENCES LANCHES (LAN_CODIGO) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE PEDIDOS_ITEM_DETALHE ADD CONSTRAINT FK_PEDIDOS_ITEM_DETALHE_3 FOREIGN KEY (ING_CODIGO) REFERENCES INGREDIENTES (ING_CODIGO) ON DELETE CASCADE ON UPDATE CASCADE;
+/******************************************************************************/
+/****                         Fields descriptions                          ****/
+/******************************************************************************/
+COMMENT ON COLUMN PEDIDOS_ITEM_DETALHE.PED_CODIGO IS 
+'CODIGO DO PEDIDO';
+
+COMMENT ON COLUMN PEDIDOS_ITEM_DETALHE.ITE_NUMERO IS 
+'NUMERO DO ITEM DO PEDIDO';
+
+COMMENT ON COLUMN PEDIDOS_ITEM_DETALHE.LAN_CODIGO IS 
+'CODIGO DO LANCHE';
+
+COMMENT ON COLUMN PEDIDOS_ITEM_DETALHE.LAN_ITEM IS 
+'NUMERO DO ITEM DO LANCHE';
+
+COMMENT ON COLUMN PEDIDOS_ITEM_DETALHE.ING_CODIGO IS 
+'CODIGO DO INGREDIENTE';
+
+COMMENT ON COLUMN PEDIDOS_ITEM_DETALHE.ITE_QTDE IS 
+'QUANTIDADE DO INGREDIENTE DO LANCHE';
+
+COMMENT ON COLUMN PEDIDOS_ITEM_DETALHE.ITE_VRUNIT IS 
+'VALOR UNITARIO DO INGREDIENTE';
+
+COMMENT ON COLUMN PEDIDOS_ITEM_DETALHE.ITE_TOTAL IS 
+'VALOR TOTAL DO ITEM NO LANCHE';
+/******************************************************************************/
+/****                              Privileges                              ****/
+/******************************************************************************/
+/* Privileges of users */
+GRANT SELECT ON MON$ATTACHMENTS TO PUBLIC;
+GRANT SELECT ON MON$CALL_STACK TO PUBLIC;
+GRANT SELECT ON MON$CONTEXT_VARIABLES TO PUBLIC;
+GRANT SELECT ON MON$DATABASE TO PUBLIC;
+GRANT SELECT ON MON$IO_STATS TO PUBLIC;
+GRANT SELECT ON MON$MEMORY_USAGE TO PUBLIC;
+GRANT SELECT ON MON$RECORD_STATS TO PUBLIC;
+GRANT SELECT ON MON$STATEMENTS TO PUBLIC;
+GRANT SELECT ON MON$TABLE_STATS TO PUBLIC;
+GRANT SELECT ON MON$TRANSACTIONS TO PUBLIC;
