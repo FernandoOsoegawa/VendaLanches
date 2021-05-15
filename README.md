@@ -1,9 +1,16 @@
 # VendaLanches
 Projeto simples de demonstração, desenvolvido em Delphi. A idéia é mostrar como poderia ser um inicialmente um sistema para venda de lanches. Como o projeto é demonstração, faltaria adicionar funcionalidades como controle de estoque, financeiro, cadastro de clientes, relatórios, criptografia, classes, melhorar a interface gráfica, etc.
 
+Ferramentas:
 - Delphi 10.2 Tokyo
 - Banco de Dados Firebird 3.0
 - Multicamadas com datasnap
+
+Pastas do projeto:
+- Cliente: fonte da aplicação cliente
+- DDL: DDL das tabelas e generators usados no Firebird (pode-se adaptar para outros bancos de dados)
+- Exe: contém todos os arquivos necessários para testar o projeto, inclusive um banco de dados zerado, pronto para utilização
+- Servidor: fonte da aplicação servidor
 
 Para executar o projeto:
 
