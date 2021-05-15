@@ -1,0 +1,43 @@
+SET SQL DIALECT 3;
+/******************************************************************************/
+/****                                Tables                                ****/
+/******************************************************************************/
+CREATE TABLE PEDIDOS_ITEM (
+    PED_CODIGO  INTEGER NOT NULL,
+    ITE_NUMERO  SMALLINT NOT NULL,
+    LAN_CODIGO  INTEGER NOT NULL
+);
+/******************************************************************************/
+/****                             Primary keys                             ****/
+/******************************************************************************/
+ALTER TABLE PEDIDOS_ITEM ADD CONSTRAINT PK_PEDIDOS_ITEM PRIMARY KEY (PED_CODIGO, ITE_NUMERO);
+/******************************************************************************/
+/****                             Foreign keys                             ****/
+/******************************************************************************/
+ALTER TABLE PEDIDOS_ITEM ADD CONSTRAINT FK_PEDIDOS_ITEM_1 FOREIGN KEY (LAN_CODIGO) REFERENCES LANCHES (LAN_CODIGO) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE PEDIDOS_ITEM ADD CONSTRAINT FK_PEDIDOS_ITEM_2 FOREIGN KEY (PED_CODIGO) REFERENCES PEDIDOS (PED_CODIGO) ON DELETE CASCADE ON UPDATE CASCADE;
+/******************************************************************************/
+/****                         Fields descriptions                          ****/
+/******************************************************************************/
+COMMENT ON COLUMN PEDIDOS_ITEM.PED_CODIGO IS 
+'CODIGO DO PEDIDO';
+
+COMMENT ON COLUMN PEDIDOS_ITEM.ITE_NUMERO IS 
+'NUMERO DO ITEM DO PEDIDO';
+
+COMMENT ON COLUMN PEDIDOS_ITEM.LAN_CODIGO IS 
+'CODIGO DO LANCHE';
+/******************************************************************************/
+/****                              Privileges                              ****/
+/******************************************************************************/
+/* Privileges of users */
+GRANT SELECT ON MON$ATTACHMENTS TO PUBLIC;
+GRANT SELECT ON MON$CALL_STACK TO PUBLIC;
+GRANT SELECT ON MON$CONTEXT_VARIABLES TO PUBLIC;
+GRANT SELECT ON MON$DATABASE TO PUBLIC;
+GRANT SELECT ON MON$IO_STATS TO PUBLIC;
+GRANT SELECT ON MON$MEMORY_USAGE TO PUBLIC;
+GRANT SELECT ON MON$RECORD_STATS TO PUBLIC;
+GRANT SELECT ON MON$STATEMENTS TO PUBLIC;
+GRANT SELECT ON MON$TABLE_STATS TO PUBLIC;
+GRANT SELECT ON MON$TRANSACTIONS TO PUBLIC;

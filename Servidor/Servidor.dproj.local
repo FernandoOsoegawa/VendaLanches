@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/05/04 18:35:55.000.642,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/05/12 20:54:33.000.552,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/05/12 20:54:35.000.117,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2021/05/12 20:54:36.000.042,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2021/05/12 20:55:04.000.171,C:\Sistemas\VendaLanches\Servidor\uFrmServidor.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/05/12 20:55:04.000.171,C:\Sistemas\VendaLanches\Servidor\uFrmServidor.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/05/12 20:55:12.000.491,C:\Sistemas\VendaLanches\Servidor\uSC.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2021/05/12 20:55:12.000.491,C:\Sistemas\VendaLanches\Servidor\uSC.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.dfm</Transaction>
+    <Transaction>2021/05/12 20:55:18.000.997,C:\Sistemas\VendaLanches\Servidor\uSM.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.dfm</Transaction>
+    <Transaction>2021/05/12 20:55:18.000.997,C:\Sistemas\VendaLanches\Servidor\uSM.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2021/05/12 20:55:27.000.413,C:\Sistemas\VendaLanches\Servidor\Servidor.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

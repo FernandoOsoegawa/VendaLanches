@@ -1,0 +1,38 @@
+SET SQL DIALECT 3;
+/******************************************************************************/
+/****                                Tables                                ****/
+/******************************************************************************/
+CREATE TABLE INGREDIENTES (
+    ING_CODIGO  INTEGER NOT NULL,
+    ING_NOME    VARCHAR(50),
+    ING_VALOR   NUMERIC(10,2)
+);
+/******************************************************************************/
+/****                             Primary keys                             ****/
+/******************************************************************************/
+ALTER TABLE INGREDIENTES ADD CONSTRAINT PK_INGREDIENTES PRIMARY KEY (ING_CODIGO);
+/******************************************************************************/
+/****                         Fields descriptions                          ****/
+/******************************************************************************/
+COMMENT ON COLUMN INGREDIENTES.ING_CODIGO IS 
+'CODIGO DO INGREDIENTE';
+
+COMMENT ON COLUMN INGREDIENTES.ING_NOME IS 
+'NOME DO INGREDIENTE';
+
+COMMENT ON COLUMN INGREDIENTES.ING_VALOR IS 
+'VALOR DO INGREDIENTE';
+/******************************************************************************/
+/****                              Privileges                              ****/
+/******************************************************************************/
+/* Privileges of users */
+GRANT SELECT ON MON$ATTACHMENTS TO PUBLIC;
+GRANT SELECT ON MON$CALL_STACK TO PUBLIC;
+GRANT SELECT ON MON$CONTEXT_VARIABLES TO PUBLIC;
+GRANT SELECT ON MON$DATABASE TO PUBLIC;
+GRANT SELECT ON MON$IO_STATS TO PUBLIC;
+GRANT SELECT ON MON$MEMORY_USAGE TO PUBLIC;
+GRANT SELECT ON MON$RECORD_STATS TO PUBLIC;
+GRANT SELECT ON MON$STATEMENTS TO PUBLIC;
+GRANT SELECT ON MON$TABLE_STATS TO PUBLIC;
+GRANT SELECT ON MON$TRANSACTIONS TO PUBLIC;

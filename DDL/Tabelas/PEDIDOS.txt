@@ -1,0 +1,46 @@
+SET SQL DIALECT 3;
+/******************************************************************************/
+/****                                Tables                                ****/
+/******************************************************************************/
+CREATE TABLE PEDIDOS (
+    PED_CODIGO      INTEGER NOT NULL,
+    PED_DATA        DATE,
+    PED_VRDESCONTO  NUMERIC(10,2),
+    PED_TOTALBRUTO  NUMERIC(10,2),
+    PED_TOTALLIQ    NUMERIC(10,2)
+);
+/******************************************************************************/
+/****                             Primary keys                             ****/
+/******************************************************************************/
+ALTER TABLE PEDIDOS ADD CONSTRAINT PK_PEDIDOS PRIMARY KEY (PED_CODIGO);
+/******************************************************************************/
+/****                         Fields descriptions                          ****/
+/******************************************************************************/
+COMMENT ON COLUMN PEDIDOS.PED_CODIGO IS 
+'CODIDO DO PEDIDO';
+
+COMMENT ON COLUMN PEDIDOS.PED_DATA IS 
+'DATA DO PEDIDO';
+
+COMMENT ON COLUMN PEDIDOS.PED_VRDESCONTO IS 
+'VALOR DO DESCONTO DO PEDIDO';
+
+COMMENT ON COLUMN PEDIDOS.PED_TOTALBRUTO IS 
+'VALOR TOTAL BRUTO DO PEDIDO';
+
+COMMENT ON COLUMN PEDIDOS.PED_TOTALLIQ IS 
+'VALOR TOTAL LIQUIDO DO PEDIDO';
+/******************************************************************************/
+/****                              Privileges                              ****/
+/******************************************************************************/
+/* Privileges of users */
+GRANT SELECT ON MON$ATTACHMENTS TO PUBLIC;
+GRANT SELECT ON MON$CALL_STACK TO PUBLIC;
+GRANT SELECT ON MON$CONTEXT_VARIABLES TO PUBLIC;
+GRANT SELECT ON MON$DATABASE TO PUBLIC;
+GRANT SELECT ON MON$IO_STATS TO PUBLIC;
+GRANT SELECT ON MON$MEMORY_USAGE TO PUBLIC;
+GRANT SELECT ON MON$RECORD_STATS TO PUBLIC;
+GRANT SELECT ON MON$STATEMENTS TO PUBLIC;
+GRANT SELECT ON MON$TABLE_STATS TO PUBLIC;
+GRANT SELECT ON MON$TRANSACTIONS TO PUBLIC;
